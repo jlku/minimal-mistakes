@@ -7,10 +7,9 @@ layout: splash
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-{% include figure image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}
 
 {% for post in paginator.posts %}
-  {% include archive-single.html %}
+  {% include figure image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}
 {% endfor %}
 
 {% include paginator.html %}
